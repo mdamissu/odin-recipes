@@ -1,59 +1,108 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <meta charset="UTF-8">
-        <meta name="description" content="Recipe">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="author" content="mdamissu"> 
-        <link rel = "stylesheet" href = "Untitled-2.css">
-    </head>
-    <body>
-        <header>
-            <h1 id = "title">Grandma’s Recipe Book</h1>
-        </header>
-        <nav>
-            <a href = "">Home</a>
-            <a href = "">Recipe</a>
-            <a href = "">About</a>
-        </nav>
-        <article>
-            <p class = "intro" >“Welcome! Here are some of my favorite homemade dishes.”</p>
-        </article>
-        <section>
-            <div class = "card">  
-                <div class = "front"> 
-                    <a href = "">Spaghetti</a>
-                    <div><img src="spaghetti.jpg"></div>
-                </div>
-                <div class = "back"> 
-                    <strong>Description</strong>
-                    <p>A classic Italian pasta dish with rich tomato sauce, ground beef, and herbs. Perfect for a cozy dinner with family or friends.</p>
-                    <strong>Ingredients</strong>
-                    <ul>
-                        <li>200g spaghetti</li>
-                        <li>2 tablespoons olive oil</li>
-                        <li>1 onion, finely chopped</li>
-                        <li>2 cloves garlic, minced</li>
-                        <li>400g ground beef</li>
-                        <li>1 can (400g) chopped tomatoes</li>
-                        <li>2 tablespoons tomato paste</li>
-                        <li>1 teaspoon dried oregano</li>
-                        <li>Fresh basil leaves (optional)</li>
-                        <li>Grated Parmesan cheese (for serving)</li>
-                    <strong>Steps</strong>
-                        <li>Cook the spaghetti in salted boiling water until al dente. Drain and set aside.</li>
-                        <li>Heat olive oil in a pan and sauté the onion and garlic until soft and fragrant.</li>
-                        <li>Add the ground beef and cook until browned.</li>
-                        <li>Stir in the chopped tomatoes, tomato paste, and oregano. Simmer for about 15 minutes.</li>
-                        <li>Season with salt and pepper to taste.</li>
-                        <li>Serve the sauce over the spaghetti. Garnish with fresh basil and Parmesan cheese.</li>
-                    <strong>Chef’s Tip</strong>
-                    <p>Add a splash of red wine to the sauce while simmering for a deeper, richer flavor.</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Recipe">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="mdamissu"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Grandma's Recipe Book</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Grandma’s Recipe Book</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipe</a>
+        <a href="#">About</a>
+    </nav>
+    <article>
+        <p class="intro">"Welcome! Here are some of my favorite homemade dishes."</p>
+    </article>
+    
+    <section class="card-container">
+        <div class="card">
+            <div class="front">
+                <h2>Spaghetti</h2>
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3BhZ2hldHRpfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=80" alt="Spaghetti">
                 </div>
             </div>
-        </section>
-        <footer>
-
-        </footer>
-    </body>
+            <div class="back">
+                <h3>Description</h3>
+                <p>A classic Italian pasta dish with rich tomato sauce, ground beef, and herbs. Perfect for a cozy dinner with family or friends.</p>
+                
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>200g spaghetti</li>
+                    <li>2 tablespoons olive oil</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>400g ground beef</li>
+                    <li>1 can (400g) chopped tomatoes</li>
+                    <li>2 tablespoons tomato paste</li>
+                    <li>1 teaspoon dried oregano</li>
+                    <li>Fresh basil leaves (optional)</li>
+                    <li>Grated Parmesan cheese (for serving)</li>
+                </ul>
+                
+                <h3>Steps</h3>
+                <ol>
+                    <li>Cook the spaghetti in salted boiling water until al dente. Drain and set aside.</li>
+                    <li>Heat olive oil in a pan and sauté the onion and garlic until soft and fragrant.</li>
+                    <li>Add the ground beef and cook until browned.</li>
+                    <li>Stir in the chopped tomatoes, tomato paste, and oregano. Simmer for about 15 minutes.</li>
+                    <li>Season with salt and pepper to taste.</li>
+                    <li>Serve the sauce over the spaghetti. Garnish with fresh basil and Parmesan cheese.</li>
+                </ol>
+                
+                <h3>Chef's Tip</h3>
+                <p>Add a splash of red wine to the sauce while simmering for a deeper, richer flavor.</p>
+            </div>
+        </div>
+        
+        <!-- Thêm card thứ hai để demo -->
+        <div class="card">
+            <div class="front">
+                <h2>Lasagna</h2>
+                <div class="image-container">
+                    <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxhc2FnbmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=80" alt="Lasagna">
+                </div>
+            </div>
+            <div class="back">
+                <h3>Description</h3>
+                <p>Layered pasta dish with rich meat sauce, creamy béchamel, and melted cheese. A classic comfort food that's perfect for family gatherings.</p>
+                
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>12 lasagna noodles</li>
+                    <li>500g ground beef</li>
+                    <li>1 onion, chopped</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>800g crushed tomatoes</li>
+                    <li>2 tablespoons tomato paste</li>
+                    <li>500g ricotta cheese</li>
+                    <li>1 egg</li>
+                    <li>200g mozzarella, shredded</li>
+                    <li>100g Parmesan, grated</li>
+                </ul>
+                
+                <h3>Steps</h3>
+                <ol>
+                    <li>Preheat oven to 190°C (375°F).</li>
+                    <li>Cook lasagna noodles according to package directions.</li>
+                    <li>Brown beef with onion and garlic. Add tomatoes and tomato paste.</li>
+                    <li>Mix ricotta with egg and Parmesan cheese.</li>
+                    <li>Layer noodles, meat sauce, and cheese mixture in baking dish.</li>
+                    <li>Top with mozzarella and bake for 25-30 minutes.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Grandma's Recipe Book</p>
+    </footer>
+</body>
 </html>
